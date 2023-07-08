@@ -125,9 +125,7 @@ p {
     font-size: 100px;
     filter: blur(3px);
     -webkit-filter: blur(3px);
-    margin-right: -93px;
-    padding-right: 97px;
-
+    margin-right: -7vw;
 }
 
 .counts {
