@@ -120,7 +120,7 @@ p {
 }
 
 .counts span.gray{
-    color:#333232;
+    color:gray;
     font-size: 100px;
 }
 
@@ -284,8 +284,7 @@ justify-content: center
    
    footer a{
     position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
+    left: 47%;
     top:-40px
    }
 
@@ -294,6 +293,50 @@ justify-content: center
     }
    
 /* hero */
+
+@media (max-width:1600px){
+    .tiger-img {
+       min-width: 500px;
+    }
+    
+    .counter-boxes {
+       width: calc(100% - 500px);
+   
+    }
+    
+    h3 {
+       font-size: 23px;
+     line-height: 1.4
+    }
+    
+    .counter, .counts span {
+       font-size: 38px;
+    }
+   }
+   
+   @media (max-width:1250px){
+    .tiger-img {
+       min-width: 500px;
+    }
+    
+    .counter-boxes {
+       width: calc(100% - 500px);
+   
+    }
+    
+    h3 {
+       font-size: 20px;
+    }
+    
+    .counter, .counts span {
+       font-size: 30px;
+    }
+    
+    .bigger .counter {
+       font-size: 101px;
+       line-height: 1.5;
+   }
+   }
 @media (max-width:1350px) {
     .tiger-img {
         min-width: 500px;
@@ -318,6 +361,29 @@ justify-content: center
     }
 }
 
+@media (max-width:1100px){
+    .counter-boxes {
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+        padding: 100px 0;
+    }
+
+    .counter-boxes .counter-box {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .counter-box h3 {
+        min-height: auto;
+    }
+
+    .hero-content {
+        align-items: flex-start;
+    }
+}
+
 @media (max-width:1040px) {
     .tiger-img {
         min-width: 400px;
@@ -326,7 +392,6 @@ justify-content: center
     .counter-boxes {
         width: calc(100% - 400px);
         row-gap: 120px;
-        padding: 30px 0;
     }
 
     h3 {
@@ -357,22 +422,9 @@ justify-content: center
     }
 }
 
+
 @media (max-width:900px) {
-    .counter-boxes {
-        flex-direction: column;
-        row-gap: 40px;
-        align-items: center;
-    }
-
-    .counter-boxes .counter-box {
-        width: 100%;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .counter-box h3 {
-        min-height: auto;
-    }
+   
 
     h2 {
         font-size: 30px;
