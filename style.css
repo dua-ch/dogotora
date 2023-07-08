@@ -111,6 +111,19 @@ p {
     margin-top: 21px
 }
 
+.bigger .counter{
+  font-size: 128px;
+}
+
+.counter-box.bigger h3{
+    min-height: auto;
+}
+
+.counts span.gray{
+    color:#333232;
+    font-size: 100px;
+}
+
 .counts {
 display: flex;
 align-items: center;
@@ -330,6 +343,18 @@ justify-content: center
         line-height: 30px;
         padding: 20px 16px;
     }
+
+    .counter-box h3 {
+        min-height: 56px;
+    }
+
+    .bigger .counter {
+        font-size: 88px;
+    }
+
+    .counts span.gray {
+        font-size: 65px;
+    }
 }
 
 @media (max-width:900px) {
@@ -483,6 +508,14 @@ justify-content: center
 
     .text {
         margin-top: 45px;
+    }
+
+    .counts span.gray {
+        font-size: 53px;
+    }
+
+    .bigger .counter {
+        font-size: 52px;
     }
 }
 
