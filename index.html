@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dojotora</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
 
     <div class="hero wide-contaienr">
-        <h1 class="text-center">D O J O T O R A <sup>TM</sup></h1>
+        <h1 class="text-center" data-aos="fade-down" data-aos-duration="3000">D O J O T O R A <sup>TM</sup></h1>
 
         <div class="hero-content">
             <div class="counter-boxes counter-boxes-left">
@@ -50,7 +52,7 @@
                 </div>
 
             </div>
-            <div class="tiger-img ">
+            <div class="tiger-img " data-aos="zoom-in" data-aos-duration="2000">
                 <img src="./imgs/tiger.png" alt="tiger">
                 <a href="#section2" class="arrow"><img src="./imgs/arrow.png" alt=""></a>
             </div>
@@ -94,17 +96,17 @@
     </div>
 
     <!---section-2-->
-    <div class="section-2" id="section2">
-        <h1 class="text-center">D O J O T O R A <sup>TM</sup></h1>
+    <div class="section-2" id="section2" >
+        <h1 class="text-center" data-aos="fade-right" data-aos-duration="2000">D O J O T O R A <sup>TM</sup></h1>
         <h2 class="text-center">FUTURE DOJO OF THIS PLANET<sup>TM</sup></h2>
-        <div class="text">
+        <div class="text" data-aos="fade-up" data-aos-duration="1000">
             <p> Whether you are a UFC Fighter, a Wrestler, an enthusiastic Martial Artist, an Athlete, a Karateka, a
                 Taekwondoin or someone planning to showcase their talent to the World</p>
             <p>DOJOTORA™ is a one stop platform for you</p>
         </div>
         <div class="stores-imgs">
-            <img src="./imgs/appstore.png" alt="">
-            <img src="./imgs/googleplay.png" alt="">
+            <img src="./imgs/appstore.png" alt="" data-aos="fade-left" data-aos-duration="1000">
+            <img src="./imgs/googleplay.png" alt="" data-aos="fade-right" data-aos-duration="1000">
         </div>
     </div>
     <div class="float-arrow">
@@ -113,9 +115,9 @@
 
     <!---section-3-->
     <div class="section-3 wide-contaienr" id="section3">
-        <h1 class="text-center">D O J O T O R A <sup>TM</sup></h1>
+        <h1 class="text-center" data-aos="fade-left" data-aos-duration="2000">D O J O T O R A <sup>TM</sup></h1>
         <h2 class="text-center">FUTURE DOJO OF THIS PLANET<sup>TM</sup></h2>
-        <div class="btns">
+        <div class="btns" data-aos="zoom-in-up" data-aos-duration="2000">
             <div>
                 TAEKWONDO
             </div>
@@ -301,8 +303,11 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+
+     AOS.init();
         $(document).ready(function () {
             // Retrieve all counter elements
             const $counterElements = $('.counter');
