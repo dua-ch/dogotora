@@ -113,6 +113,7 @@ p {
 
 .bigger .counter{
   font-size: 128px;
+  line-height: 1;
 }
 
 .counter-box.bigger h3{
@@ -120,8 +121,10 @@ p {
 }
 
 .counts span.gray{
-    color:gray;
-    font-size: 100px;
+    color: #333232;
+    font-size: 151px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 
 .counts {
@@ -334,8 +337,11 @@ justify-content: center
     
     .bigger .counter {
        font-size: 101px;
-       line-height: 1.5;
    }
+
+   .counts span.gray {
+    font-size: 100px;
+}
    }
 @media (max-width:1350px) {
     .tiger-img {
