@@ -6,6 +6,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: #fff;
     background: #000000;
+    overflow-x: hidden;
 }
 
 html {
@@ -144,7 +145,7 @@ p {
     text-align: right;
 } */
 
-.wide-contaienr {
+.wide-container {
     max-width: 1728px;
     margin: 0 auto;
 }
@@ -198,20 +199,36 @@ p {
 }
 
 .tiger-img .arrow {
-    position: absolute;
-    bottom: -78px;
+    /* bottom: -78px;
     z-index: 1;
-    transform: translateX(-50%);
-    animation: arrowScale 1s infinite alternate;
+    transform: translateX(-50%); */
+    /* animation: arrowScale 1s infinite alternate; */
     left: 50%;
+    background: linear-gradient(to right , #467BF8 ,  #9552FF);
 }
 
 .arrow {
-    width: 100px;
-    height: 100px;
-    animation: arrowScale1 1s infinite alternate;
-    display: block;
-    margin: 0 auto
+    animation: animatedBtn 1s infinite linear;
+    display: inline-block;
+    margin: 0 auto;
+    background: linear-gradient(to right , #467BF8 ,  #9552FF);
+    padding: 18px 20px;
+    font-weight:600;
+    font-size:27px;
+    line-height:30px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.arrow:hover{
+    background: linear-gradient(to left , #467BF8 ,  #9552FF);
+    transition: all 0.3s ;
+}
+
+.float-arrow{
+    padding-bottom: 30px;
 }
 
 .arrow img{
@@ -222,13 +239,17 @@ p {
     min-height: 100px
 }
 
-@keyframes arrowScale {
+@keyframes animatedBtn {
     0% {
-        transform: translateX(-50%) scale(1);
+        box-shadow: 0 0 10px 10px #467bf8
+    }
+
+    50% {
+        box-shadow: 0 1px 20px 10px #467bf8
     }
 
     100% {
-        transform: translateX(-50%) scale(1.2);
+        box-shadow: 0 0 10px 10px #467bf8
     }
 }
 
@@ -279,8 +300,8 @@ footer {
     align-items: center;
     max-width: 1366px;
     margin: 0 auto;
-    justify-content: space-between;
-    position: relative
+    position: relative;
+    gap: 28%;
 }
 
 footer>span {
@@ -293,17 +314,6 @@ footer>span {
 
 footer span span {
     font-size: 16px;
-}
-
-
-footer a {
-    position: absolute;
-    left: 47%;
-    top: -40px
-}
-
-.float-arrow {
-    overflow: hidden
 }
 
 /* hero */
