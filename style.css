@@ -229,6 +229,8 @@ p {
 
 .float-arrow{
     padding-bottom: 30px;
+    position: absolute;
+    left: 49%;
 }
 
 .arrow img{
@@ -301,7 +303,6 @@ footer {
     max-width: 1366px;
     margin: 0 auto;
     position: relative;
-    gap: 28%;
 }
 
 footer>span {
@@ -461,20 +462,24 @@ footer span span {
 }
 
 
+@media (max-width:1024px){
+    footer{
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 30px;
+    }
+
+    .float-arrow{
+        position: static;
+        padding: 0 20px
+    }
+}
+
 @media (max-width:900px) {
 
 
     h2 {
         font-size: 30px;
-    }
-
-    footer a {
-        position: static
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 20px
     }
 
     footer span {
@@ -567,6 +572,17 @@ footer span span {
         padding-right: 0;
     }
 
+    .float-arrow{
+        min-width: 250px;
+    }
+
+    .arrow {
+        font-size: 24px;
+        line-height: 27px;
+        text-align: center;
+        display: block;
+    }
+
 }
 
 @media (max-width:640px) {
@@ -611,6 +627,18 @@ footer span span {
 
     .bigger .counter {
         font-size: 52px;
+    }
+
+
+}
+
+@media (max-width:479px){
+    footer> span img{
+        width: 15px
+    }
+
+    footer span span {
+        font-size: 13px;
     }
 }
 
