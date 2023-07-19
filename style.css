@@ -107,7 +107,7 @@ p {
 
 .counter,
 .counts span {
-    font-size: 48px;
+    font-size: 43px;
     line-height: 1;
     font-weight: 800;
     margin-top: 21px
@@ -133,7 +133,7 @@ p {
 .counts {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
     justify-content: center
 }
 
@@ -173,12 +173,12 @@ p {
 }
 
 .counter-boxes {
-    width: calc(100% - 775px);
+    width: 100%
 }
 
 .tiger-img {
     min-width: 650px;
-    max-width: 100%;
+    width: 100%;
     padding: 0 10px;
     position: relative;
 }
@@ -321,15 +321,13 @@ footer span span {
 
 /* hero */
 
-@media (max-width:1600px) {
+@media (max-width:1720px){
     .tiger-img {
-        min-width: 500px;
+        min-width: 450px;
     }
+}
 
-    .counter-boxes {
-        width: calc(100% - 500px);
-
-    }
+@media (max-width:1600px) {
 
     h3 {
         font-size: 23px;
@@ -338,7 +336,7 @@ footer span span {
 
     .counter,
     .counts span {
-        font-size: 38px;
+        font-size: 28px;
     }
 }
 
@@ -348,15 +346,25 @@ footer span span {
     }
 }
 
-@media (max-width:1250px) {
+@media (max-width:1400px) {
+    .counts span.gray {
+        margin-right: -20px;
+    }
+
     .tiger-img {
-        min-width: 500px;
+        min-width: 350px;
     }
 
-    .counter-boxes {
-        width: calc(100% - 500px);
+}
 
+@media (max-width:1200px){
+    .tiger-img {
+        min-width: 280px;
     }
+}
+
+@media (max-width:1250px) {
+
 
     h3 {
         font-size: 20px;
@@ -376,15 +384,6 @@ footer span span {
     }
 }
 
-@media (max-width:1350px) {
-    .tiger-img {
-        min-width: 500px;
-    }
-
-    .counter-boxes {
-        width: calc(100% - 500px);
-    }
-}
 
 @media (max-width:1230px) {
     h3 {
